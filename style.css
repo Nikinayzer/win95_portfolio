@@ -1,0 +1,475 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MS_sans'; /*a name to be used later*/
+    src: url(./assets/MS\ Sans\ Serif\ 8pt.ttf); 
+}
+
+body {
+    margin: 0;
+    font-family:MS_sans;
+    background-color: rgb(34, 40, 49);
+    color: rgb(254, 255, 255);
+    background-image: url(./assets/wallpaper.jpg);
+
+}
+
+.window{
+    width:600px;
+    height:600px;
+    background-color: rgb(190,190,190);
+    padding: 5px;
+}
+.window_nav{
+    height: 30px;
+    background-color:rgb(3,3,241);
+    display:flex;
+    justify-content: space-between;
+}
+.close_button{
+    margin: 2px;
+    margin-right: 5px;
+    width:25px;
+    height:25px;
+    background-color: rgb(190,190,190);
+    background-image: url(./assets/close_button.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.active_window{
+    color:black;
+    background-color: white;
+    width:585px;
+    height:550px;
+    margin:2px;
+    margin-top: 5px;
+    padding: 150px;
+    padding-top: 50px;
+}
+.active_window_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.icons{
+    height:100vh;
+    margin:10px;
+    display: flex;
+}
+
+.win_field{
+    background-color:rgb(190,190,190);
+    height:52px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+
+}
+.win_field img{
+height: 50px;
+}
+.win_menu{
+    height:400px;
+    width:300px;
+    background-color:rgb(190,190,190);
+    position: absolute;
+    left: 0%;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    display: none;
+
+
+
+
+
+}
+.win_menu_content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:black;
+}
+
+/*About me */
+
+#aboutme h2{
+    text-align: center;
+    margin: -10px;
+}
+#aboutme .active_window_content img{
+    width: 140px;
+    height:140px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+
+#aboutme_window{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 400px;
+}
+
+#aboutme_window .window_nav h3{
+    margin: -10px;
+    background-image: url(./assets/pc_ico.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    text-indent: 75px;
+    display: flex;
+    align-items: center;
+}
+/*Projects */
+
+#projects h2{
+    text-align: center;
+    margin: -10px;
+}
+
+#projects .active_window_content img{
+    width: 140px;
+    height:140px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#projects:focus #projects_window{
+    display: block;
+
+}
+
+#projects_window{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 400px;
+}
+
+#projects_window .window_nav h3{
+    margin: -10px;
+    background-image: url(./assets/folder_ico.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    text-indent: 75px;
+    display: flex;
+    align-items: center;
+}
+/* projects items*/
+#projects .active_window_content{
+    display: flex;
+    flex-direction: row;
+}
+
+#projects .active_window_content > *{
+    margin: 5px;
+    margin-top: -25px;
+    padding: 10px;
+    text-align: center;
+
+
+
+}
+
+#projects .active_window_content > * >h4{
+margin-top: -70px;
+
+
+}
+/* Contacts */
+#contacts h2{
+    text-align: center;
+    margin: -10px;
+}
+
+#contacts .active_window_content img{
+    width: 140px;
+    height:140px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#contacts_window .active_window_content #links{
+margin-top: 50px;
+
+}
+
+
+#contacts:focus #contacts_window{
+    display: block;
+
+}
+
+#contacts_window{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 400px;
+}
+
+#contacts_window .window_nav h3{
+    margin: -10px;
+    background-image: url(./assets/contacts_ico.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    text-indent: 75px;
+    display: flex;
+    align-items: center;
+}
+
+/* mail from*/
+#mailform > *{
+    margin-bottom: 20px;
+   }
+   #mailform > * > *{
+   margin-bottom: 20px;
+   }
+
+
+
+
+
+
+/* Timeline*/
+
+#timeline h2{
+    text-align: center;
+    margin: -10px;
+}
+#timeline .active_window{
+    overflow : scroll;
+}
+
+#timeline .active_window_content img{
+    width: 140px;
+    height:140px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#timeline:focus #timeline_window{
+    display: block;
+
+}
+
+#timeline_window{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 400px;
+}
+
+#timeline_window .window_nav h3{
+    margin: -10px;
+    background-image: url(./assets/image_ico.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    text-indent: 75px;
+    display: flex;
+    align-items: center;
+}
+
+/* TIMELINE ITSELF*/
+/* Card container */
+.card {
+    position: relative;
+    max-width: 400px;
+  }
+  
+
+  .card:nth-child(odd) {
+    padding: 30px 0 30px 30px;
+  }
+  .card:nth-child(even) {
+    padding: 30px 30px 30px 0;
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid rgb(3, 3, 3);
+  }
+  
+
+  .card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+  }
+  
+
+  .card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+  }
+  
+
+  .card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+  }
+  
+ 
+  .card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+
+  .card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+
+  .info {
+    display: flex;
+    flex-direction: column;
+
+    color: black;
+    border: 2px;
+    border-radius: 10px ;
+    padding: 10px;
+  }
+  
+
+  .title {
+    color: rgb(6, 6, 6);
+    position: relative;
+  }
+  
+
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgb(250, 248, 255);
+    border-radius: 999px;
+    border: 3px solid rgb(4, 4, 4);
+  }
+  
+
+  .card:nth-child(even) > .info > .title {
+    text-align: right;
+  }
+  
+
+  .card:nth-child(odd) > .info > .title::before {
+    left: -45px;
+  }
+  
+
+  .card:nth-child(even) > .info > .title::before {
+    right: -45px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    height:200px;
+    width:100px;
+    position: relative;
+
+}
+
+.icon img{
+    margin-left: -10px;
+}
+
+.icon h2{
+    margin-top: -10px;
+    font-size: 1rem;
+}
+
+#aboutme img {
+    height:100px;
+}
+
+#projects img {
+    height:100px;
+}
+
+#timeline img {
+    height:100px;
+    margin-left: 0.1px;
+}
+
+#contacts img {
+    height:100px;
+
+}
+
+
+#aboutme_btn{
+    display: none;
+}
+#projects_btn{
+    display: none;
+}
+#contacts_btn{
+    display: none;
+}
+#timeline_btn{
+    display: none;
+}
+#win_btn{
+    display: none;
+}
+
+
+
+
+
+#aboutme_btn:checked + label #aboutme_window {
+    display: block;
+}
+#projects_btn:checked + label #projects_window {
+    display: block;
+}
+#contacts_btn:checked + label #contacts_window {
+    display: block;
+}
+#timeline_btn:checked + label #timeline_window {
+    display: block;
+}
+#win_btn:checked + label .win_menu {
+    display: block;
+}
+

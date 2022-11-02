@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nick Korotov - developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+</head>
+
+<body>
+    <div class="icons">
+        <div class="icon">
+            <div id="aboutme">
+                <input type="checkbox" id="aboutme_btn" />
+                <label class="btn" for="aboutme_btn">
+                    <img id="aboutme_ico" src="./assets/pc_ico.png" alt="pc ico">
+
+                    <h2>About Me</h2>
+
+                    <div id="aboutme_window">
+                        <div class="window">
+                            <div class="window_nav">
+                                <h3>About Me</h3>
+                                <div class="close_button">
+                                </div>
+                            </div>
+                            <div class="active_window">
+                                <div class="active_window_content">
+                                    <img src="./assets/logo.png" alt="logo">
+                                    <p>Hello! I'm Nikita Korotov, junior frontend and backend developer.</p>
+                                    <div id="links">
+                                        <a href="https://github.com/Nikinayzer">GitHub</a>
+                                        <a
+                                            href="https://cz.linkedin.com/in/n1ckor?trk=public_profile_browsemap">LinkedIn</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div id="projects">
+                <input type="checkbox" id="projects_btn" />
+                <label class="btn" for="projects_btn">
+                    <img src="./assets/folder_ico.png" alt="projects folder ico">
+                    <h2>My projects</h2>
+                    <div id="projects_window">
+                        <div class="window">
+                            <div class="window_nav">
+                                <h3>My projects</h3>
+                                <div class="close_button">
+                                </div>
+                            </div>
+                            <div class="active_window">
+                                <div class="active_window_content">
+                                    <div id="game">
+                                        <img src="./assets/folder_ico.png" alt="projects folder ico">
+                                        <h4>Simple Java game about a musician</h4>
+                                    </div>
+
+                                    <div id="web_page">
+                                        <img src="./assets/folder_ico.png" alt="projects folder ico">
+                                        <h4>This web page</h4>
+                                    </div>
+
+                                    <div id="soon">
+                                        <img src="./assets/folder_ico.png" alt="projects folder ico">
+                                        <h4>Cooming soon</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+
+            </div>
+            <div id="contacts">
+                <input type="checkbox" id="contacts_btn" />
+                <label class="btn" for="contacts_btn">
+                    <img src="./assets/contacts_ico.png" alt="pc ico">
+                    <h2>E-Mail</h2>
+                    <div id="contacts_window">
+                        <div class="window">
+                            <div class="window_nav">
+                                <h3>New mail</h3>
+                                <div class="close_button">
+                                </div>
+                            </div>
+                            <div class="active_window">
+                                <div class="active_window_content">
+
+                                    <h4>New mail to me...<br>
+
+                                    </h4>
+
+                                    <div id="mailform">
+                                        <form action="mailto:korotov.nick@gmail.com" method="POST" enctype="text/plain"
+                                            name="EmailForm">
+
+                                            <div id="mailname">
+                                                <label for="name">Name:</label><br>
+                                                <input type="text" id="name" name="name"><br>
+                                            </div>
+                                            <div id="mailtext">
+                                                <label for="ContactCommentt">Message:</label><br>
+                                                <textarea id="ContactCommentt" rows="6" cols="20"></textarea>
+                                            </div>
+                                            <div id="mailbutton">
+                                                <input type="submit" value="Send">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+
+            </div>
+            <div id="timeline">
+                <input type="checkbox" id="timeline_btn" />
+                <label class="btn" for="timeline_btn">
+                    <img src="./assets/image_ico.png" alt="timeline ico">
+                    <h2>My timeline</h2>
+                    <div id="timeline_window">
+                        <div class="window">
+                            <div class="window_nav">
+                                <h3>Timeline</h3>
+                                <div class="close_button">
+                                </div>
+                            </div>
+                            <div class="active_window">
+                                <div class="active_window_content">
+                                    <div>
+
+                                        <div class="timeline">
+                                            <div class="outer">
+                                                <div class="card">
+                                                    <div class="info">
+                                                        <h3 class="title">I was born</h3>
+                                                        <p>2002, February's cold night </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="info">
+                                                        <h3 class="title">I finished the school, 2020</h3>
+                                                        <p>I did never enjoy this</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="info">
+                                                        <h3 class="title">I went to university, 2021</h3>
+                                                        <p>Welcome to VŠE!</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="info">
+                                                        <h3 class="title">Cooming soon!</h3>
+                                                        <p></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="win_bar">
+        <input type="checkbox" id="win_btn" />
+        <label class="btn" for="win_btn">
+            <div class="win_field">
+                <img src="./assets/win_btn.png" alt="win button">
+                <div class="win_menu">
+                    <div class="win_menu_content">
+                        <h4>INFO:</h4>
+                        <p>This project was created as a crazy idea within 6 hours.
+                            Pure CSS/HTML used.
+                            All icons and style inspired by WIN 95.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            </label>
+    </div>
+
+</body>
+
+</html>
